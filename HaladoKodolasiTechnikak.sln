@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums(ÁllapotGép)", "Enum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{944D1260-C0ED-4F28-B295-73BD16778712}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi-Dimensional Arrays", "Multi-Dimensional Arrays\Multi-Dimensional Arrays.csproj", "{D7510EBB-160E-4850-A378-567161BE9CA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{944D1260-C0ED-4F28-B295-73BD16778712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{944D1260-C0ED-4F28-B295-73BD16778712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{944D1260-C0ED-4F28-B295-73BD16778712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7510EBB-160E-4850-A378-567161BE9CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7510EBB-160E-4850-A378-567161BE9CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7510EBB-160E-4850-A378-567161BE9CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7510EBB-160E-4850-A378-567161BE9CA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +86,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7} = {73C9B08A-78E4-4E46-A447-B15341B5176F}
 		{944D1260-C0ED-4F28-B295-73BD16778712} = {1E5DFA0E-01BC-4ED9-821F-B7F8A4837E97}
+		{D7510EBB-160E-4850-A378-567161BE9CA9} = {175AB682-2241-40C6-815A-1514DCE74567}
 	EndGlobalSection
 EndGlobal
