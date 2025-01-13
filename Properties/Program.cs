@@ -2,6 +2,8 @@
 {
     public class Program
     {
+        // Egyszerre változó és metódus is.
+        // a get és a set eszközeivel metódust lehet írni ha az írásra és az olvasásra.
 
         //prop
         public static string name { get; set; }

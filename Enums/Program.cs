@@ -8,6 +8,7 @@ namespace Enums
     {
         static void Main(string[] args)
         {
+            //Egyedi értékek definiálására való könnyen értelmezhető nevekkel
             //Ez a módszer abban segít, hogy egyszerűbb és érhetőbb kódot
             //lehessen írni bizonyos állapotok kifejezésére
             var car = new Car();
