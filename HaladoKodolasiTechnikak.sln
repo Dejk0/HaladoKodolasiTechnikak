@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{73C9B08A-78E4-4E46-A447-B15341B5176F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{1E5DFA0E-01BC-4ED9-821F-B7F8A4837E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multi-Dimensional Arrays", "Multi-Dimensional Arrays", "{175AB682-2241-40C6-815A-1514DCE74567}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nested Loops", "Nested Loops", "{2CBE4038-1478-4690-865B-7924067E8A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursion", "Recursion", "{1EBA730D-7FD2-4718-9BF3-A89854D1F445}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{9072BA3E-AAE7-4FE1-87D6-97ED4267629F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other Collections", "Other Collections", "{6E119E87-0E7D-44B7-AF54-0AD416FF1D48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Params", "Params", "{2D60014B-5006-4BA7-B491-7CE17F800AC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Optional Parameters", "Optional Parameters", "{59837223-8A76-4091-971E-E59EFDDC014A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Value Types vs Reference Types", "Value Types vs Reference Types", "{BE9ECCDD-F092-4454-B0F8-B4CCE157A6D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Struct", "Struct", "{392295DB-E285-4DB7-9925-729FE80D39F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class Intermediate", "Class Intermediate", "{97E9EA5F-B013-4EE9-872C-2FA607D25BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{356F6E9B-A778-4332-BBE8-297E159F0B6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "is as casting", "is as casting", "{A29C82A1-263E-4D72-BD8E-F39BE27BF291}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Switch Pattern Matching", "Switch Pattern Matching", "{5A215B8C-11BD-411B-BEE4-5383243F1550}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delegates", "Delegates", "{E1758DDB-07AA-42AE-B7DF-000F266BB91B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local Functions vs Lambda", "Local Functions vs Lambda", "{11B819D2-6320-4578-B3FF-50B1A4A1D57B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{50C79EC3-999D-4424-A1F9-4033160B733F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generics", "Generics", "{0978A5F4-62EF-4564-B488-72F6EC0BE38A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Constants Readonly", "Constants Readonly", "{13EB94E9-B0E7-4DC8-AB37-D8723AED8C97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Try Catch Exceptions", "Try Catch Exceptions", "{C0571E80-30F8-49A3-80ED-FCBE1EF2A1CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Namespaces", "Namespaces", "{919F2213-52CA-4482-B10B-AF9BDF62A64C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IEnumerable", "IEnumerable", "{97DFA17C-06C9-4CE8-8031-246F930FCCC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton Pattern", "Singleton Pattern", "{D184C0B8-3482-425F-A999-5746063FB685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design Patterns", "Design Patterns", "{321B167E-3E1F-48DF-8917-17793EAAC776}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactoring", "Refactoring", "{249338BB-89C1-4D52-97F8-264DEFBB83F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums(ÁllapotGép)", "Enums\Enums(ÁllapotGép).csproj", "{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4218D8BB-FFB1-462B-8D00-8CA04FF50AA7} = {73C9B08A-78E4-4E46-A447-B15341B5176F}
+	EndGlobalSection
+EndGlobal
