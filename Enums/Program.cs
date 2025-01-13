@@ -8,7 +8,8 @@ namespace Enums
     {
         static void Main(string[] args)
         {
-
+            //Ez a módszer abban segít, hogy egyszerűbb és érhetőbb kódot
+            //lehessen írni bizonyos állapotok kifejezésére
             var car = new Car();
             car.HandleState();
            
