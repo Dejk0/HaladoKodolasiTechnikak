@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLoops", "NestedLoops\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{FF2593EE-7A5D-412D-8B4E-F0007175B60D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{BCC3A570-A054-430D-9469-90275BFC5318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{FF2593EE-7A5D-412D-8B4E-F0007175B60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2593EE-7A5D-412D-8B4E-F0007175B60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2593EE-7A5D-412D-8B4E-F0007175B60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC3A570-A054-430D-9469-90275BFC5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC3A570-A054-430D-9469-90275BFC5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC3A570-A054-430D-9469-90275BFC5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC3A570-A054-430D-9469-90275BFC5318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,5 +107,6 @@ Global
 		{D7510EBB-160E-4850-A378-567161BE9CA9} = {175AB682-2241-40C6-815A-1514DCE74567}
 		{258FC3E6-F4EE-4982-AE0E-A9A3FDA75DF9} = {2CBE4038-1478-4690-865B-7924067E8A5A}
 		{FF2593EE-7A5D-412D-8B4E-F0007175B60D} = {1EBA730D-7FD2-4718-9BF3-A89854D1F445}
+		{BCC3A570-A054-430D-9469-90275BFC5318} = {9072BA3E-AAE7-4FE1-87D6-97ED4267629F}
 	EndGlobalSection
 EndGlobal
