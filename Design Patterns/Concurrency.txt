@@ -1,0 +1,27 @@
+﻿Active object[1][2]
+
+Balking pattern
+
+Barrier
+
+Double-checked locking
+
+Guarded suspension
+
+Leaders/followers pattern
+
+Monitor Object
+
+Nuclear reaction
+
+Reactor pattern
+
+Read write lock pattern
+
+Scheduler pattern
+
+Thread pool pattern
+
+Thread-local storage
+
+https://en.wikipedia.org/wiki/Concurrency_pattern

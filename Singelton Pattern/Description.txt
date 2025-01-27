@@ -1,0 +1,42 @@
+﻿Questions:
+1. When is it Appropriate to use a Singelton pattern?
+2. How do you implement a singelton in C#?
+3. Where are the core accesibility rule for a singelon?
+4. Can I avoid useing the singelton pattern?
+5. How can singeltons be abused?
+
+Answers:
+1.
+	The Singleton pattern is used when you need to ensure that a class has exactly one instance
+	throughout the application's lifecycle and provide a global point of access to that instance.
+	It is a design pattern that balances resource usage and control over object instantiation.
+2.
+	code
+3.
+	The core accessibility rules for implementing a Singleton in C# are critical to ensuring that
+	the pattern is applied correctly, safely, and effectively. These rules govern how the Singleton
+	class is structured, instantiated, and accessed.
+4. 
+	I can often avoid using the Singleton pattern by employing alternative design patterns or 
+	techniques that achieve the same goals without some of the downsides of the Singleton pattern. 
+	While the Singleton pattern is simple and convenient, it introduces global state, tight coupling,
+	and can make testing difficult. 
+5.
+	Singletons can be abused when they are overused, misused, or improperly implemented, 
+	leading to poor software design and maintainability issues. 
+	How to Avoid Singleton Abuse
+		Use Dependency Injection:
+			Pass shared dependencies explicitly rather than relying on global access.
+		Example: Use services.AddSingleton<T>() in DI containers.
+
+		Minimize Shared State:
+			Design classes to be stateless or with minimal, localized state.
+
+		Evaluate Alternatives:
+			Use static classes, factory patterns, or scoped/transient lifetimes when appropriate.
+
+		Test Singleton Usage:
+			Ensure that the Singleton is properly implemented and doesn't introduce threading or state-related issues.
+
+		Apply Only When Necessary:
+			Limit Singleton use to cases where a single instance is truly required, such as managing logging, configurations, or thread pools.

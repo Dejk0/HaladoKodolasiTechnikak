@@ -1,0 +1,17 @@
+﻿Abstract Factory pattern: a class requests the objects it requires from a factory object instead of creating the objects directly
+
+Factory method pattern: centralize creation of an object of a specific type choosing one of several implementations
+
+Builder pattern: separate the construction of a complex object from its representation so that the same construction process can create different representations
+
+Dependency Injection pattern: a class accepts the objects it requires from an injector instead of creating the objects directly
+
+Lazy initialization pattern: tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed
+
+Object pool pattern: avoid expensive acquisition and release of resources by recycling objects that are no longer in use
+
+Prototype pattern: used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects
+
+Singleton pattern: restrict instantiation of a class to one object
+
+https://en.wikipedia.org/wiki/Creational_pattern
