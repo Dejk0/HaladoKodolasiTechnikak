@@ -1,0 +1,38 @@
+Questions:
+1.	What is an enum, and why are they used instead of integers or strings?
+2.	How Do you define and use enums?
+3.	How do you convert an enum to its underlying integer value?
+4.	How do you parse a string onto an enum?
+5.	How do oyu iterate over all valuse of an enum?
+6.	Are there any common pitfalls whit Enum?
+
+1.	An enum (enumeration) is a distinct data type in C# that defines a 
+	set of named constant values. It improves code readability and 
+	type safety by replacing arbitrary integers or strings with meaningful names.
+
+2. code
+3. code
+4.	enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+
+	// Using Enum.Parse
+	string input = "Monday";
+	Days day = (Days)Enum.Parse(typeof(Days), input);
+
+5. code
+6.	Invalid Casting: Casting an invalid integer to an enum can lead to errors.
+	Solution: Use Enum.IsDefined to validate values.
+
+	Poor Naming: Vague enum names reduce readability.
+	Solution: Use descriptive names.
+
+	Reordering Members: Changing enum member order can break code.
+	Solution: Explicitly assign values to members.
+
+	String Parsing Issues: Enum.Parse is case-sensitive and can throw exceptions.
+	Solution: Use Enum.TryParse with true for case-insensitivity.
+
+	Flag Enum Misuse: Without [Flags], combining values can lead to issues.
+	Solution: Use [Flags] for bitwise operations.
+
+	Serialization Issues: Enum values may serialize as integers.
+	Solution: Serialize as strings or control formatting.
