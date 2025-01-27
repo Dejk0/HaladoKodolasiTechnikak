@@ -1,0 +1,38 @@
+﻿Questons:
+1.	What is a porperty in C# and how does it differ from a field?
+2.	What is an auto-implemented property? How is it different form a non-auto-implemented property?
+3.	How can you add logic to a property's gtter or setter?
+4.	Do you have to implement both a get and a set?
+5.	What does it mean to have different access modifiers for getter and setter, and how is it usefull?
+6.	Why might someone pref not to use properties?
+7.	How are properties used in the singelton pattern?
+8.	Can properties be used in interfaces?
+
+Answers:
+1.	In C#, a property is a member that provides a mechanism to read, write, 
+	or compute the value of a private field. It acts as a wrapper around a field and 
+	can have custom logic (e.g., validation) for getting or setting the value.
+
+2.	An auto-implemented property is a shorthand syntax in C# where the compiler 
+	automatically creates a private, anonymous backing field for the property. 
+	You don’t need to explicitly declare a field for the property to store its value.
+
+3.	code
+4.	No, you don't have to implement both a get and a set for a property in C#. 
+	You can implement just one depending on the desired behavior.
+
+5.	In C#, you can have different access modifiers for the getter and setter of a property.
+	This allows you to control how the property can be accessed and modified, 
+	providing fine-grained control over the property’s behavior.
+
+6.	Performance: Properties can introduce slight overhead compared to direct field access in performance-critical code.
+	Simplicity: For simple data structures, direct fields can be more straightforward.
+	Legacy Code: In older codebases, using properties may require unnecessary refactoring.
+	Control: Methods can offer more explicit control over data access and validation.
+	Data Exposure: Methods can be more restrictive, offering finer control over how data is accessed or modified.
+
+7.	In the Singleton pattern, properties are commonly used to access the single instance of a class. 
+	The get accessor is typically used to provide access to the instance, ensuring that only one instance is ever created.
+
+8.	Yes, properties can be used in interfaces in C#. They define the contract for 
+	getting and/or setting values, but the implementation is left to the classes that implement the interface.
