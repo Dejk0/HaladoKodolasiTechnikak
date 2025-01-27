@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("https://en.wikipedia.org/wiki/Software_design_pattern");
         }
     }
 }
