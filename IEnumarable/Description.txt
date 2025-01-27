@@ -1,0 +1,57 @@
+﻿Questions:
+1.	What is the main purpose of implemanting IEnumerable?
+2.	What is the difference between IEnumarable and IEnumerator?
+3.  Can you show an example of implementing IEnumarable and IEnumarator for a custom collection?
+4.	How does the yield return statement work?
+
+1. 
+In C#, the main purpose of implementing the IEnumerable interface is to provide a standardized way
+to iterate over a collection of objects. By implementing this interface, 
+a class allows its objects to be used in a foreach loop or with LINQ queries, 
+enabling easy and readable access to the elements in the collection.
+
+2. 
+The key difference between IEnumerable and IEnumerator in C# lies in their purposes and 
+how they are used:
+	Purpose
+	a.
+		IEnumerable: Represents a collection that can be iterated over. It is an interface
+		that provides a single method, GetEnumerator, which returns an IEnumerator.
+	b. 
+		IEnumerator: Represents the actual mechanism for iterating through a collection. 
+		It provides methods and properties to access and move through the elements of the collection.
+		
+	Usage
+	a. 
+		IEnumerable: Used to define a collection that can be iterated 
+		(e.g., a list, array, or a custom collection).
+	b.
+		IEnumerator: Used to iterate through the collection (one element at a time) and
+		provides control over the iteration.
+
+	Relationship
+	a.	
+		IEnumerable provides a high-level abstraction for collections that can be iterated over.
+	b.
+		IEnumerator provides the low-level implementation to iterate through the collection.
+
+3. 
+code
+
+4. 
+	4.1.	State Machine Generation:
+
+	4.1.1.
+		When the compiler encounters a method with yield return, it automatically generates a 
+		state machine (a class) to manage the iteration process.
+	4.1.2.
+		This state machine tracks the current position in the method and resumes execution where 
+		it left off each time the GetEnumerator().MoveNext() is called.
+
+	4.2.	Lazy Evaluation:
+		Values are not computed all at once. Instead, they are calculated and returned one at a time,
+		as the consumer requests them.
+
+	4.3.	Preserves Method State:
+		The method retains its state between calls, allowing local variables and execution 
+		flow to be preserved.

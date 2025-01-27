@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstantsAndReadonly", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatchExeptions", "TryCatchExeptions\TryCatchExeptions.csproj", "{2B2E2F34-42E5-4F21-919B-F14B04C8C760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumarable", "IEnumarable\IEnumarable.csproj", "{2F65D822-EA6F-47B5-A4C5-CDC933A6963A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{2B2E2F34-42E5-4F21-919B-F14B04C8C760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2E2F34-42E5-4F21-919B-F14B04C8C760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2E2F34-42E5-4F21-919B-F14B04C8C760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F65D822-EA6F-47B5-A4C5-CDC933A6963A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F65D822-EA6F-47B5-A4C5-CDC933A6963A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F65D822-EA6F-47B5-A4C5-CDC933A6963A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F65D822-EA6F-47B5-A4C5-CDC933A6963A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,5 +263,6 @@ Global
 		{5A09EE26-A1A7-4B22-8F4B-CA4F222D8341} = {0978A5F4-62EF-4564-B488-72F6EC0BE38A}
 		{51A0AE2C-95AF-402D-994C-6762B18226AD} = {13EB94E9-B0E7-4DC8-AB37-D8723AED8C97}
 		{2B2E2F34-42E5-4F21-919B-F14B04C8C760} = {C0571E80-30F8-49A3-80ED-FCBE1EF2A1CF}
+		{2F65D822-EA6F-47B5-A4C5-CDC933A6963A} = {97DFA17C-06C9-4CE8-8031-246F930FCCC7}
 	EndGlobalSection
 EndGlobal
