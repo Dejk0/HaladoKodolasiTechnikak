@@ -1,0 +1,39 @@
+﻿Questions:	
+1.	What is recursion, and how does it works in C#?
+2.	How do you prevent recursion infinite loops?
+3.	What is stack overflow, and hwy does it occur in the context of recursion?
+4.	How does recursion compare to using loops for interation?
+5.	Can i awoid recursion if i find it too confusion?
+6.	Can i use recursion instead of loops if i prefer it?
+
+Answers:	
+1.	Recursion is a programming technique where a method calls itself to solve a problem.
+	It works by breaking the problem into smaller subproblems, with a base case to stop the recursion.
+
+2.	To prevent infinite recursion, you must ensure that the base case is reached,
+	terminating the recursion. The base case is a condition where the recursion stops.
+
+3.	A stack overflow occurs when the call stack (memory used for method calls) exceeds 
+	its limit, typically due to excessive or unbounded recursion.
+
+4.	Recursion and loops are both used for iteration, but they differ in approach and use cases:
+		Approach: A function calls itself to solve smaller subproblems.
+		State: Each recursive call creates a new function stack frame.
+		Use Case: Ideal for problems that naturally break into smaller subproblems (e.g., tree traversal, factorials).
+		Downside: Can lead to stack overflow if not properly controlled; usually less efficient due to overhead of function calls.
+
+5.	Yes, i can avoid recursion if i find it confusing. Many problems that are solved using recursion 
+	can also be solved using loops or iterative techniques.
+		Alternatives:
+		Loops: Instead of calling a function repeatedly, i can use for, while, or foreach loops.
+		Stack or Queue: For problems like tree traversal, i can use explicit data structures
+		(like a stack or queue) to simulate recursion iteratively.
+		Dynamic Programming: For problems like Fibonacci sequences, dynamic programming can replace recursion with iteration.
+
+6.	Yes, i can use recursion instead of loops if i prefer it, 
+	as long as the problem iam solving can be naturally expressed recursively.
+	Advantages of Recursion:
+		Elegance: Some problems (like tree traversal or solving problems with 
+		nested structures) are easier and more intuitive with recursion.
+
+		Cleaner Code: For certain problems, recursion can make the code more concise and easier to understand.

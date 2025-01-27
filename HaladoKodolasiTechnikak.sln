@@ -16,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{9072BA3E-AAE7-4FE1-87D6-97ED4267629F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other Collections", "Other Collections", "{6E119E87-0E7D-44B7-AF54-0AD416FF1D48}"
+	ProjectSection(SolutionItems) = preProject
+		Description.txt = Description.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Params", "Params", "{2D60014B-5006-4BA7-B491-7CE17F800AC3}"
 EndProject

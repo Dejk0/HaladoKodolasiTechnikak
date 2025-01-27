@@ -1,0 +1,31 @@
+﻿Questions:
+1.	What is a multidimensional array, and how is it diferent from a regular array?
+2.	How do you declare and initialize a 2D array in C#?
+3.	How do you access and modify elements in a 2D array?
+4.	What are the differances between a 2D array and an array of arrays?
+5.	How do you acccess and modify elements in an array of arrays?
+6.	How do you determine the length of ech dimension in a multidimensional array of arrays?
+7.	How do you iterate over all emelents of a 2D array?
+8.	What are jagged arrays?
+9.	What is partical exemple of how 2D arrays are usefull?
+
+Answers:
+1.	A multidimensional array is an array that contains more than one dimension (e.g., a 2D or 3D array). 
+	It is essentially an array of arrays, allowing you to store data in a matrix-like or grid-like structure.
+
+2.	code.
+3.	code.
+4.	A 2D array and an array of arrays are similar but have key differences in how they're structured and accessed.
+		2D Array: "int[,] matrix = new int[3, 2];
+			It's a single array with a fixed, rectangular structure.
+			Memory is allocated contiguously, meaning all elements are stored in a single block.
+			Accessed using two indices (array[row, column)).
+		Array of Arrays: "int[][] jaggedArray = new int[3][];"
+			It's an array where each element is a reference to another array, potentially allowing jagged structures (arrays of varying lengths).
+			Memory is not contiguous for all elements, as each sub-array is allocated separately.
+			Accessed using two indices, but each "row" can have a different length.
+5. code
+6. code
+7. code
+8.	A jagged array in C# is an array of arrays, where each "row" can have a different length. 
+	Unlike multidimensional (2D) arrays, jagged arrays are not rectangular and allow for irregular structures.

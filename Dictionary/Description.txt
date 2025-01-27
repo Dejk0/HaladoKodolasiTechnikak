@@ -1,0 +1,23 @@
+Questions:	
+1.	What is a Dictionar in C#?
+2.	How do you declare and initalitze a Dictionary?
+3.	How do you add items to a Dictionary?
+4.	What is the TryGetValue and how does it work?
+5.	How do you iterare over the keys, values, or key-value pairs in a Dictionary?
+6.	what is the trick to useing a Dictionary?
+
+Answers:	
+1.	A Dictionary in C# is a collection of key-value pairs, where each key is unique,
+	and maps to a specific value. It provides fast lookups based on the key.
+2.	code.
+3.	code.
+4.	TryGetValue is a method in C#'s Dictionary that attempts to 
+	get the value associated with a specified key. It returns true if 
+	the key exists and false if it does not, without throwing an exception.
+5.	You can iterate over the keys, values, or key-value pairs in a Dictionary using a foreach loop.
+
+6.	Choose the Right Key: Use types with good GetHashCode and Equals implementations.
+	Use TryGetValue: Safely check if a key exists.
+	Efficient Updates: Use [] to add or update entries.
+	Handle Duplicates: Avoid duplicate keys; they’ll throw exceptions.
+	Memory vs Performance: Use for fast lookups but be mindful of memory use.
