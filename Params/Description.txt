@@ -1,0 +1,27 @@
+Questions:
+1.	What is the params keyword in C#, and how dos it works?
+2.	What is an example of params being used?
+3.	What are the requirements for using the params keyword in a function?
+4.	Is the array passaed to a params paramater ever null, or 
+	is it always instantiated even if no armunets are passed?
+
+Answers:
+1.	The params keyword in C# allows a method to accept a variable 
+	number of arguments of the same type, enabling flexibility in how
+	you call the method. It treats the arguments as an array.
+	How it works:
+		It must be the last parameter in the method signature.
+		You can pass a comma-separated list of values or an array of the specified type
+2.	code.
+3.	Last Parameter: The params parameter must be the last parameter
+	in the method's signature. You cannot have another parameter after it.
+
+	Array Type: The parameter must be an array (e.g., params int[], params string[], etc.). 
+	This array will hold all the arguments passed to the method.
+
+	Same Type: The arguments passed via params must be of 
+	the same type as the array element type.
+
+4.	When using the params keyword in C#, if no arguments are passed to the method, 
+	the array parameter will never be null. Instead, it is automatically 
+	instantiated as an empty array.
