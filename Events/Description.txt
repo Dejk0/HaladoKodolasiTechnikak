@@ -1,0 +1,47 @@
+Questions:
+1.	What is an event in C#, and how does it work?
+2.	How do you declare and fire and event in a C# class?
+3.	Can you show an example of subscribing to and unsubscribing form an event?
+4.	What happens if you dont unsubscribe form an event?
+5.	What are the differences between using delegates and evenets? Why use evenet keyword?
+6.	What is the EvenetHandler delegate?
+7.	How do you pass data with an event using EventArgs or custom evenet data classes?
+8.	How does event-driven programing help UI and game ligic speration?
+
+Answers:
+
+1.	An event is a mechanism in C# that allows an object to notify other objects when
+	something happens, following the publish-subscribe pattern. It is backed by
+	delegates and supports adding or removing event handlers dynamically.
+
+2.	Declare an event using public event EventHandler EventName;.
+	Fire the event using EventName?.Invoke(this, EventArgs.Empty);, ensuring
+	there are subscribers.
+
+3.	code
+	Subscribe: obj.MyEvent += handler;
+	Unsubscribe: obj.MyEvent -= handler;
+
+4.	Not unsubscribing from events can lead to memory leaks and unexpected 
+	behavior, as the event publisher will continue to hold a reference to 
+	the subscriber, preventing garbage collection.
+
+5.	Delegate: A type for referencing methods that can be invoked directly.
+
+	Event: A special delegate used for notifications and restricts direct 
+	invocation from external classes.
+
+	The event keyword ensures encapsulation, preventing external code from 
+	accidentally triggering the event, which is a key difference from plain delegates.
+
+6.	EventHandler is a standard delegate used for events that do not require
+	additional data, just the sender and basic event arguments (EventArgs).
+
+7.	Use EventArgs for events with no extra data.
+	To pass data, create a custom class that inherits from EventArgs 
+	and pass it through the event handler.
+
+8.	Event-driven programming enables separation by making the 
+	UI respond to events triggered by the game logic, ensuring that 
+	each operates independently but still interacts when necessary. 
+	This makes the system more modular and easier to maintain.

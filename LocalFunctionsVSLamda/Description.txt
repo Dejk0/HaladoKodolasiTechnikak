@@ -1,0 +1,49 @@
+Questions:
+1.	What are local functions in C#, and how do they differ from regular functions?
+2.	How do local functions compare to lambdas in terms fo syntax and usage?
+3.	are there performance differences between using local functions and lambdas?
+4.	Can local fanctions be passad as deleggates or 
+	used as evenet handlers, similar to lambdas?
+
+Answers:
+
+1.	Local functions are functions defined inside another method.
+	They allow you to encapsulate logic that is only used 
+	within that method, improving readability and reusability within 
+	the scope of the method.
+	Key Differences from Regular Functions:
+		Scope: Local functions are scoped to the method they're defined
+		in, meaning they cannot be called outside that method.
+
+		Access to Outer Method Variables: Local functions can 
+		access variables and parameters of the enclosing method.
+
+		Use Case: Local functions are typically used for helper
+		functions that are not needed elsewhere in the class or program.
+
+2.	Local Functions:
+		Regular method syntax, can have multiple statements.
+		Access outer method variables.
+		Better for complex logic.
+	Lambdas:
+		Shorter, concise => syntax.
+		Typically for single-line operations.
+		Used in delegates, LINQ, events
+
+3.	Local Functions:
+		Compiled directly as part of the method, so they tend to have less overhead.
+		No heap allocation for the method itself since it’s
+		defined inline within the method.
+	Lambdas:
+		Captured variables: When lambdas close over variables 
+		(i.e., they access variables outside their scope), the compiler 
+		may need to allocate memory for the captured variables.
+
+		Heap allocation: Lambdas that are assigned to a delegate or 
+		used in LINQ may result in a heap-allocated object (like Func<T>), 
+		introducing some performance overhead.
+
+4.	No, local functions cannot be passed as delegates or used as 
+	event handlers in C# in the same way that lambdas can. This is 
+	because local functions are local to the method where they are 
+	defined and cannot be referenced outside of that method.
