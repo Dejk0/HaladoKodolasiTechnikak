@@ -1,0 +1,45 @@
+Questions:
+1.	What are optional paramters in C#?
+2.	What rules most be followed when using optional paramters in a funcion?
+3.	What is the default keyword?
+4.	How do you call a function with only some optional parameters?
+5.	Can you call a function with optional paramteres out ot order?
+6.	What are the advanctages of using optional parameters over mehtod overloading?
+
+answers.
+1.	Optional parameters in C# allow you to specify default values for method parameters. 
+	If the caller doesn't provide a value, the default is used.
+
+2.	They must have a default value.
+	They must come after required parameters.
+	Avoid ambiguous overloads to prevent confusion.
+
+3.	The default keyword in C# is used to return the default value of a type, which is:
+		0 for numeric types (e.g., int, double),
+		false for bool,
+		null for reference types (e.g., string, object),
+		A default instance for custom types (if they have a parameterless constructor).
+
+4.	To call a function with only some optional parameters, you simply provide values 
+	for the required parameters and leave out the optional ones. The optional 
+	parameters will automatically take their default values.
+
+5.	I can call a function with optional parameters out of order by explicitly 
+	specifying the parameter names in the function call.
+
+6.	Cleaner Code: Optional parameters reduce the need for multiple overloaded 
+	methods, leading to cleaner and more maintainable code.
+
+	Easier to Read: The method signature remains simple and 
+	easier to read, as you don’t have to look through many 
+	overloads to understand the functionality.
+
+	Less Duplication: You avoid duplicating the same method 
+	logic in different overloads, making your code more concise.
+
+	Flexibility: Optional parameters allow you to call the same method
+	with different numbers of arguments, while method overloading 
+	requires defining separate methods.
+
+	Reduced Number of Methods: In cases where the parameter variation is
+	minimal, optional parameters can replace multiple overloaded methods with one.
