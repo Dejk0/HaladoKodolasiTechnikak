@@ -1,0 +1,66 @@
+Questions:	
+1.	What is inheritance is C#?
+2.	How Does function overriding work?
+3.	What is the purpose of the virtual and override keyword?
+4.	What is polymorphism?
+5.	What are abstract classes and functions?
+6.	What does the sealed keyword do to a class?
+7.	How do structs differ form classes in terms of inheritance?
+8.	How does inheritance comapre with interfaces?
+9.	How do class destructors work in C#?
+10.	What does it mean to pref composition over inheritance?
+
+Answers:
+1.	Inheritance in C# allows a class (derived class) to inherit members 
+	from another class (base class), enabling code reuse and hierarchy.
+
+2.	Function overriding in C# allows a derived class to provide a specific implementation for a 
+	method that is already defined in its base class. This is achieved by using the override keyword.
+
+	Key Points:
+	Base Class Method: The method in the base class must be marked as virtual or abstract.
+	Derived Class Method: The derived class method must be marked as override.
+	Polymorphism: The method in the derived class will be called at runtime when 
+	invoked on an object of the derived class, even if it's referenced as the base type.
+
+3.	The virtual and override keywords in C# are used to enable method overriding and polymorphism.
+	Purpose of virtual:
+		virtual is used in the base class to indicate that a method can be 
+		overridden by derived classes.
+		It allows derived classes to provide their own implementation of that method.
+	Purpose of override:
+		override is used in the derived class to provide a new implementation of a 
+		method that was marked as virtual in the base class.
+		It ensures that the derived class method will be called at runtime 
+		instead of the base class method.
+
+4.	Polymorphism in C# is the ability of different objects to be treated as instances of the same
+	class through a common interface, allowing methods to behave differently based on 
+	the object’s actual type.
+
+5.	Abstract classes and abstract methods in C# are used to define classes and methods that 
+	cannot be instantiated or directly used but serve as templates for derived classes.	
+
+6.	The sealed keyword in C# is used to prevent a class from being inherited.
+	Once a class is marked as sealed, no other class can derive from it.
+
+7.	Structs cannot be used as base classes, and they cannot inherit from 
+	other structs or classes (except System.ValueType).
+
+	Classes can inherit from other classes, allowing for a rich object-oriented inheritance model.
+
+8.	Inheritance: A class can inherit from one base class, gaining both 
+	implementation and method signatures.
+
+	Interfaces: A class can implement multiple interfaces, which only define method 
+	signatures (no implementation or state).
+
+9.	Destructors in C# are special methods used to clean up resources when an object is no 
+	longer in use. They are automatically called by the garbage collector before the
+	object is destroyed.
+
+10.	Composition over inheritance means favoring object composition (including objects as fields)
+	rather than using inheritance to extend functionality. It promotes reusability and
+	flexibility by creating objects from existing components instead of 
+	creating complex class hierarchies.
+
