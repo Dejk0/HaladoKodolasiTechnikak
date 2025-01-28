@@ -1,0 +1,55 @@
+Questions:
+1.	What does the is keyword is do in C#?
+2.	How does the GetType() function do? What is typeof?
+3.	What is the difference between using as and casting for type conversion?
+4.	What happends when a type conversion fails using as compared to casting?
+5.	What is boxing and unboxing in C#?
+6.	How does inheritance affect the ability to convert between types?
+	What about interfaces? Polymorphism?
+
+Answers: 
+
+1.	The is keyword in C# checks if an object is of a specific type and can 
+	also perform a safe type cast in one operation.
+
+2.	GetType(): Returns the runtime type of an object instance.
+	typeof: Gets the Type object of a class or type at compile-time.
+
+3.	The as operator attempts to cast an object to a specified type.
+	Returns null if the conversion is not possible, instead of throwing an exception.
+	Used when you expect a successful conversion or want to handle failure gracefully.
+
+4.	When as fails:
+		The as operator returns **null** if the type conversion is not possible.
+		It does not throw an exception; instead, you can check for 
+		null to handle the failure.
+
+	When casting fails:
+		Casting throws an InvalidCastException if the conversion is not possible.
+		You must handle this exception using try-catch if you're unsure of the type.
+
+5.	Boxing:
+		Boxing is the process of converting a value type (e.g., int, char) 
+		into an object (a reference type).
+		This involves wrapping the value type in a heap-allocated 
+		object to treat it like a reference type.
+	Unboxing:
+		Unboxing is the reverse process: converting an object back into a value type.
+		You must explicitly cast the object back to the original value type.
+
+6.	Inheritance and Type Conversion:
+		Inheritance allows objects of a derived class to be treated as objects 
+		of the base class, enabling implicit type conversion (upcasting).
+
+		Downcasting (base class to derived class) requires explicit 
+		casting and can throw an InvalidCastException if not safe.
+
+	Interfaces:
+		A class that implements an interface can be converted to that interface type.
+		Implicit conversion is possible if the class implements the interface.
+
+	Polymorphism:
+		Polymorphism allows objects to be treated as instances of their 
+		base type or interface, enabling dynamic method dispatch.
+		The actual object type determines the method to invoke at runtime.
+
