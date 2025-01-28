@@ -1,0 +1,64 @@
+Questions:
+1.	What are the main differences between value types and refrence types in C#?
+2.	What are some examples of value types and reference types?
+3.	How does assignment work differently for value types and reference types?
+4.	What happens when you pass a value types and reference types to a function?
+5.	Can value types be null?
+6.	What is a struct, and how does it differ from a class in tems of being a
+	value type of refference type?
+7.	Is an array of int a value type?
+
+Answpers:
+1.	Value types:
+	Store data directly.
+	Assigned by copying the value.
+	Examples: int, float, struct.
+
+	Reference types:
+	Store a reference (memory address) to the data.
+	Assigned by copying the reference, not the data itself.
+	Examples: string, class, array.
+
+	Key Difference: Value types hold the actual data, while reference 
+	types hold a reference to the data in memory.
+
+2.	Value Types:
+	Primitive types: int, double, bool, char
+	Structs: DateTime, Guid, custom structs
+	Enumerations: enum
+
+	Reference Types:
+	Classes: string, object, custom classes
+	Arrays: int[], string[]
+	Delegates: Action, Func
+
+3.	Value types: Copies the data.
+
+	Reference types: Copies the reference (memory address), affecting the original object.
+
+4.	Value Types:
+	Passed by copy. Changes don't affect the original.
+
+	Reference Types:
+	Passed by reference. Changes affect the original.
+
+5.	No, value types cannot be null directly in C#. However, you can use
+	nullable value types (e.g., int?, bool?) to allow value types to be null.
+
+6.	A struct is a value type in C#. It is used to define lightweight objects 
+	that contain data, typically for small, immutable objects.	
+	Key Differences Between Structs and Classes:
+	Value Type vs Reference Type:
+	Struct: Value type (stores data directly, copied by value).
+	Class: Reference type (stores a reference to the data, copied by reference).
+
+	Memory Allocation:
+	Struct: Stored on the stack (faster, but limited size).
+	Class: Stored on the heap (can be larger, requires garbage collection).
+
+	Inheritance:
+	Struct: Does not support inheritance (cannot inherit from other structs or classes).
+	Class: Supports inheritance.
+
+7.	The array (the container) is a reference type, but
+	the elements inside the array are value types.
