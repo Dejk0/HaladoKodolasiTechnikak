@@ -1,0 +1,46 @@
+Questions:
+1.	What is an interface in C#?
+2.	What can you define inside an interface?
+3.	How can you implement an interface in a class?
+4.	How are interfaces different form inheritance?
+5.	Does polymorphism also apply to interfaces?
+6.	What are some practical use cases for using interfaces?
+
+Answers:
+
+1.	An interface in C# defines a contract that classes must implement. 
+	It specifies method signatures, properties, events, or indexers, but 
+	does not provide any implementation.
+
+2.	In C#, you can define the following inside an interface:
+		Method Signatures: Only the declaration of methods, without		
+		implementations.
+
+		Properties: Only the getter and setter signatures, without
+		implementation.
+
+		Events: Declarations for events.
+
+		Indexers: Declarations for indexers.
+
+3.	Interfaces provide a way to enforce behavior across unrelated classes,
+	while inheritance allows sharing both behavior and state within a 
+	class hierarchy.
+
+4.	Interfaces define behavior without implementation and allow multiple 
+	inheritance.
+
+	Inheritance allows a class to share both behavior and structure but
+	is limited to a single base class.
+
+5.	Yes, polymorphism applies to interfaces in C#. Polymorphism allows 
+	objects to be treated as instances of their base type, enabling 
+	methods to be called on them dynamically at runtime.
+
+6.	Defining contracts: Ensure classes implement specific methods.
+	Decoupling: Allow for modular code with interchangeable implementations.
+	Dependency injection: Inject different implementations at runtime.
+	Polymorphism: Treat objects uniformly when they implement the same interface.
+	Testing: Easily mock dependencies in unit tests.
+	Event handling: Standardize event handling across different classes.
+	Plugin architecture: Enable dynamic plugins by defining common interfaces.
