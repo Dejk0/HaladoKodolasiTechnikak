@@ -1,0 +1,23 @@
+Questions:
+1.	What is switch type matching and how does it differ from traditional 
+	switch statments?
+2.	What is the syntax for switch type matching?
+3.	What is the purpose of the when clause in switch pattern matching, 
+	and how do you use it?
+4.	How does witch type matching imporve code readability compared to 
+	traditional type checking methods?
+
+Answers
+1.	Switch type matching works with types and patterns; traditional 
+	switch works with values.
+
+2.	code
+3.	The when clause in switch pattern matching allows you to add 
+	additional conditions to a pattern match, further filtering when 
+	a case should be selected.
+
+4.	Switch type matching improves readability by:
+
+	Concise and clear type checks in one structure.
+	No need for manual casting or multiple if statements.
+	Allows for conditional checks with the when clause in a compact format.

@@ -1,0 +1,50 @@
+Questions:
+1.	What is a delegate in C#?
+2.	Do you have to define custom delegates?
+3.	What are the built-in delegate types Action an Func?
+4.	Can you provide an example of using a lambda anonymous function with a delegate?
+5.	What does it mean that delegates can multicast?
+6.	What are some common use cases for delegates?
+
+Answers
+1.	A delegate in C# is a type-safe object that references a method or a 
+	group of methods. It allows you to pass methods as arguments, 
+	assign methods to variables, and invoke them dynamically.
+
+	Key Points:
+	Type-safe: Ensures that the method signature matches the delegate type.
+	Method pointer: Acts like a function pointer, but in a safer 
+	and more controlled manner.
+	Multicast: A delegate can point to multiple methods and invoke them in sequence.
+
+2.	No, you don't have to define custom delegates in C# for most scenarios. 
+	C# provides several built-in delegate types, such as:
+		Action: A delegate type for methods that return void and take parameters.
+		Func: A delegate type for methods that return a value and take parameters.
+		Predicate: A delegate type for methods that return a bool and 
+		take a single parameter
+
+3.	Action:
+		A delegate for methods with no return value (void).
+		Takes zero or more parameters.
+
+	Func:
+		A delegate for methods with a return value.
+		Takes zero or more parameters, with the last parameter being the return type.
+
+4.	code
+5.	Multicast delegates in C# can hold references to multiple methods and
+	invoke them sequentially, one after the other.
+
+		Key Points:
+		A multicast delegate is capable of calling more than one method when invoked.
+		It allows for methods to be added or removed dynamically from the 
+		delegate's invocation list.
+		Typically used in event handling, where multiple event handlers are triggered.
+
+6.	Event Handling: Used to subscribe to and handle events.
+	Callback Methods: Allow methods to be passed as arguments for later invocation.
+	LINQ Queries: Used for filtering, sorting, or transforming data.
+	Multithreading: Pass methods to run on separate threads.
+	Function Pointers: Dynamic method calls.
+	Command Pattern: Encapsulate method calls in design patterns.
