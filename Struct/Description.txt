@@ -1,0 +1,66 @@
+Questions:
+1.	What is a struct in C#, and how does it differ from a class?
+2.	What is the implication behind the fact that structs are value types and classes are reference types?
+3.	Can structs have functions, fileds and properties like classis?
+4.	Do stracts have to be immutabel?
+5.	What rules to struct constructors have?
+6.	Can a struct implement interfaces? Can it inherit form another struct or class?
+7.	How does the memotry efficiency of struct compare to classes? Witch is more performant?
+
+Answers:
+1.	A struct in C# is a lightweight, value type used for small, immutable data objects.
+
+	Key Differences Between Structs and Classes:
+	Aspect	Struct	Class
+	Type			Value type							Reference type
+	Memory			Stored on the stack (faster).		Stored on the heap (garbage collected).
+	Inheritance		Cannot inherit or be inherited.		Supports inheritance and polymorphism.
+	Nullability		Cannot be null (unless nullable).	Can be null.
+	Performance		Efficient for small, simple types.	Better for large, complex objects.
+
+2.	Structs are best for small, immutable data where performance is critical.
+	Classes are ideal for complex, mutable objects that benefit from shared references.
+
+3.	Yes, structs can have fields, properties, and methods, like classes, but with limits:
+	Fields: Instance or static fields.
+	Properties: Read-only, read-write, or auto-implemented.
+	Methods: Instance or static methods.
+	Constructors: Parameterized only; no parameterless constructors unless all fields are initialized.
+
+	Limitations:
+	No inheritance.
+	Fields must be fully assigned before use.
+
+4.	No, structs in C# do not have to be immutable, but it is generally recommended to make them 
+	immutable for better behavior and performance as value types.
+
+5.	No Parameterless Constructors (pre-.NET Core 3.0): Compiler provides a default one.
+	Initialize All Fields: Custom constructors must assign all fields.
+	No base() Calls: Structs cannot call base class constructors.
+	Static Constructors Allowed: For initializing static fields.
+
+6.	Yes, structs can implement interfaces.
+	They must provide implementations for all interface members.
+
+	No, structs cannot inherit from another struct or class.
+	Structs are sealed and cannot be used as a base or derive from other types.
+	They always implicitly inherit from System.ValueType, which derives from object.
+
+7.	Memory Efficiency: Structs vs Classes
+		Structs (Value Types):
+		Stored on the stack, which is faster to allocate and deallocate.
+		No garbage collection overhead.
+		More memory-efficient for small, short-lived data.
+
+		Classes (Reference Types):
+		Stored on the heap, which incurs garbage collection overhead.
+		Additional memory is used for references and object headers.
+
+	Performance:
+		Structs:
+		Faster for small, simple, and short-lived objects.
+		Avoids heap allocation, reducing pressure on garbage collection.
+
+		Classes:
+		Better for large or complex objects, especially if they are mutable or shared.
+		More efficient when passed around as references to avoid copying.
