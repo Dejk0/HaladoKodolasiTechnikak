@@ -1,4 +1,4 @@
-﻿namespace RangeVariables
+﻿namespace SQlite_Connecntion
 {
     internal class Program
     {
