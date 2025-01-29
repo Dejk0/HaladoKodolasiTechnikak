@@ -21,10 +21,10 @@ namespace ChainingQueryOperators
             //same reason that we can reuse the identifier c in the following
             //method:
 
-                foreach (char c in "string1") Console.Write(c);
-                foreach (char c in "string2") Console.Write(c);
-                foreach (char c in "string3") Console.Write(c);
-            
+            foreach (char c in "string1") Console.Write(c);
+            foreach (char c in "string2") Console.Write(c);
+            foreach (char c in "string3") Console.Write(c);
+
 
         }
     }
