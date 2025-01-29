@@ -9,6 +9,7 @@ Questions:
 8.	How does inheritance comapre with interfaces?
 9.	How do class destructors work in C#?
 10.	What does it mean to pref composition over inheritance?
+11. What can you use it for the partical keyword?
 
 Answers:
 1.	Inheritance in C# allows a class (derived class) to inherit members 
@@ -64,3 +65,7 @@ Answers:
 	flexibility by creating objects from existing components instead of 
 	creating complex class hierarchies.
 
+11. The partial keyword in C# allows a class, struct, interface, or method to be defined in multiple 
+	parts across different files. This can be useful for organizing large codebases, 
+	allowing multiple developers to work on different parts of a class, or separating 
+	auto-generated code from user-written code.
