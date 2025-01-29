@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.InteropServices;
 
 namespace Generics
 {
@@ -30,6 +31,7 @@ namespace Generics
         private interface IAttackable
         {
             public int GetAtackPoints();
+            
         }
         private interface IDefendable
         {
@@ -39,9 +41,11 @@ namespace Generics
         {
             Console.WriteLine(p);
         }
-        private class MyList<T> () //where T : class => it can be only class
+        private class MyList<T>() //where T : class => it can be only class
         {
             public T field;
+
+            
             public T MyFunction()
             {
                 //return null; some type cant be null
@@ -52,5 +56,7 @@ namespace Generics
         {
             T Value { get; set; }
         }
+        
+       
     }
 }

@@ -1,0 +1,35 @@
+﻿Questions:
+1.	What are generics in C#?
+2.	How do you define a generic class or method in C#?
+3.	Is the class List<T> using a generic?
+4.	What are type constraints in generics, and how do you apply them?
+5.  What are some real word use case for generics?
+6.  Can you use multiple generc types?
+
+Answers:
+
+1.	Generic types in C# allow you to define classes, interfaces,
+	methods, and delegates with placeholders for the data types 
+	they operate on. This enables you to create reusable code that 
+	can work with different data types without sacrificing type safety.
+
+2.  To define a generic class, use the following syntax:
+	class ClassName<T> { /* class members */ }
+	To define a generic method, use the following syntax:
+	void MethodName<T>(T parameter) { /* method body */ }
+
+3.	Yes, the List<T> class is a generic class that allows you to 
+	store and manipulate a list of items of a specific type T.
+
+4.	Type constraints in generics allow you to restrict the types that 
+	can be used with a generic class or method. You can apply constraints 
+	such as where T : class, where T : struct, where T : new(), 
+	and where T : SomeBaseClass to limit the types that can be used.	
+
+5.  Real-world use cases for generics include collections like List<T>, 
+	dictionaries like Dictionary<TKey, TValue>, and generic algorithms 
+	that can operate on different data types without duplication.
+
+6.  Yes, you can use multiple generic types in a class or method by
+	defining them with a comma-separated list like <T, U>. This allows 
+	you to work with multiple data types in a generic context.
