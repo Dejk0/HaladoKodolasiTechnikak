@@ -1,0 +1,47 @@
+﻿Questions:
+
+1.	What are constants in C#?
+2.  What is the differenc between const and readonly in C#?
+3.  Why can only certain data types be declared as const?
+4.  When shuld you use const vs readonly?
+5.  Can readonly fields be modified after object construction?
+6.  Where can i assing a value to a readonly field?
+7.  Can const or readonly be used with static fields?
+
+Answers:
+
+1.  Constants in C# are variables whose values cannot be changed once 
+	they are assigned. They are declared using the const or readonly 
+	keywords and are typically used for values that are known at 
+	compile time and will not change during the program's execution.
+
+2.  The main difference between const and readonly in C# is that
+	const fields are implicitly static and must be initialized with 
+	a compile-time constant value, while readonly fields can have 
+	different values depending on the constructor used to create 
+	the object. Const values are resolved at compile time, while 
+	readonly values can be set at runtime.
+
+3.  Only certain data types can be declared as const in C# because
+	const values must be known at compile time and cannot change 
+	during the program's execution. This restriction ensures that 
+	const values are truly constant and can be optimized by the 
+	compiler.
+
+4.	Use const when the value will never change and is known at 
+	compile time, such as mathematical constants or configuration 
+	values. Use readonly when the value can be different for each 
+	instance of a class or when the value is not known until runtime.
+
+5.	No, readonly fields cannot be modified after object construction.
+	Once a readonly field is assigned a value, it cannot be changed, 
+	ensuring that the field remains constant throughout the object's 
+	lifetime. 
+
+6.	You can assign a value to a readonly field in the field's declaration
+	or in the constructor of the class. This allows you to set the 
+	readonly field's value when the object is created and ensure that 
+	it remains constant thereafter.
+
+7.	Yes, const and readonly can be used with static fields in C#.
+	

@@ -1,1 +1,37 @@
-﻿
+﻿Questions:
+
+1. What is a Namespace in C#?
+2. How do you decide when to create a new Namespace?
+3. What is a namespace alias in C#?
+4. Do you have to define a namespace for all your code?
+5. what can you use it for the useing keyword in C#?
+
+Answers:
+
+1. A Namespace in C# is a way to organize and group related classes, interfaces, 
+   structs, enums, and other types into a logical hierarchy. Namespaces help 
+   prevent naming conflicts and make it easier to manage and maintain large 
+   codebases by providing a way to partition code into distinct sections.
+
+2. You should create a new Namespace when you have a set of related types that 
+   serve a common purpose or belong to a specific module or component of your 
+   application. This helps keep your code organized, maintainable, and easier 
+   to understand by grouping related types together.
+
+3. A namespace alias in C# is a way to provide a shorter or more convenient name 
+   for a namespace in your code. This can be useful when working with long or 
+   nested namespaces to reduce the amount of typing required to reference types 
+   within that namespace. You can define a namespace alias using the using keyword 
+   followed by an alias and the namespace name, like using Alias = NamespaceName;.
+
+4. While it is not strictly required to define a namespace for all your code,
+   it is considered a best practice to use namespaces to organize and structure 
+   your codebase. This helps prevent naming conflicts, makes it easier to locate 
+   and reference types, and provides a clear hierarchy for your code.
+
+5. The using keyword in C# is used to import namespaces into your code file,
+   allowing you to reference types within those namespaces without fully 
+   qualifying the type names. This can help reduce the amount of typing required 
+   to access types and make your code more readable. You can use the using 
+   directive at the top of your code file to import namespaces, like using 
+   System; to import the System namespace.

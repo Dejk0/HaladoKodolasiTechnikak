@@ -1,0 +1,53 @@
+﻿Questions
+
+1. What is an exeption in C#?
+2. How do try, catch, and finally blocks work in C#?
+3. Can you handle multiple specific types of exceptions in a single catch block?
+4. What is the main purpose of the finally block in exception handling?
+5. How do you throw an expetion?
+6. How do you throw a custom exception in C#?
+7. What does it mean to rethrow an exception? and how do you do it?
+
+Answers
+
+1.	An exception in C# is an object that represents an error or 
+	unexpected condition that occurs during the execution of a program. 
+	Exceptions can be thrown by the runtime or explicitly by the 
+	programmer to handle errors and prevent program crashes.
+
+2.  The try block is used to enclose the code that may throw an exception. 
+	The catch block is used to handle the exception if it occurs, 
+	providing a way to recover from the error. The finally block is 
+	used to execute code that should always run, regardless of whether 
+	an exception is thrown or caught.
+
+3.  Yes, you can handle multiple specific types of exceptions in a
+	single catch block by using multiple catch clauses, each 
+	specified with a different exception type. The catch blocks 
+	are evaluated in order, and the first matching catch block 
+	is executed.
+
+4.  The main purpose of the finally block in exception handling is
+	to ensure that certain code is always executed, regardless of 
+	whether an exception is thrown or caught. This can be useful 
+	for releasing resources, closing files, or performing cleanup 
+	operations that should always occur.
+
+5.	You can throw an exception in C# using the throw keyword followed 
+	by an exception object. For example, throw new Exception("An error 
+	occurred"); will throw a new Exception object with the specified 
+	error message.
+
+6.	To throw a custom exception in C#, you can create a new class that 
+	derives from Exception or another exception type and throw an 
+	instance of that custom exception class. For example, 
+	throw new CustomException("Custom error message"); will throw 
+	a new instance of the CustomException class with the specified 
+	error message.
+
+7.	Rethrowing an exception means throwing the same exception that was 
+	caught in a catch block. This can be useful for propagating 
+	exceptions up the call stack while preserving the original 
+	exception information. To rethrow an exception, you can use 
+	the throw keyword without specifying a new exception object, 
+	like throw; inside a catch block.
