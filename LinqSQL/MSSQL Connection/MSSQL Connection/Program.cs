@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace SQLite_EFCore
+namespace MSSQLConnection
 {
     internal class Program
     {
@@ -10,7 +10,7 @@ namespace SQLite_EFCore
         {
             using (var context = new AppDbContext())
             {
-                context.Database.EnsureCreated(); 
+                context.Database.EnsureCreated(); // Létrehozza az adatbázist, ha nem létezik
 
                 InsertData(context);
                 ReadData(context);
@@ -48,7 +48,7 @@ namespace SQLite_EFCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlite("Data Source=mydatabase.db");
+            options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MSSQLconnection;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
     }
 }
