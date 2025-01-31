@@ -226,6 +226,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "The let Keyword", "The let 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The let Keyword", "LinqSQL\Basics\Projection Strategies\The let Keyword\The let Keyword.csproj", "{5105A4B0-9B98-4FCA-9431-077B27935B16}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreted Queries", "Interpreted Queries", "{8027BBAA-CA9B-4772-AC6D-7B542373EE84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreted Queries", "LinqSQL\Basics\Interpreted Queries\Interpreted Queries\Interpreted Queries.csproj", "{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -448,6 +452,10 @@ Global
 		{5105A4B0-9B98-4FCA-9431-077B27935B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5105A4B0-9B98-4FCA-9431-077B27935B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5105A4B0-9B98-4FCA-9431-077B27935B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -559,5 +567,7 @@ Global
 		{F1C43FDF-BAAB-4F6E-BE9A-F8590790A0C9} = {ED0102C1-CCE4-46DA-B6D3-8B7EC7494B8D}
 		{9B0AAC51-EF7E-47CC-AF18-4035F5B32FA2} = {ED0102C1-CCE4-46DA-B6D3-8B7EC7494B8D}
 		{5105A4B0-9B98-4FCA-9431-077B27935B16} = {9B0AAC51-EF7E-47CC-AF18-4035F5B32FA2}
+		{8027BBAA-CA9B-4772-AC6D-7B542373EE84} = {13B34CB7-D6F0-46E9-846A-5D3C0E7C3CD4}
+		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C} = {8027BBAA-CA9B-4772-AC6D-7B542373EE84}
 	EndGlobalSection
 EndGlobal
