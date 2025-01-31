@@ -182,6 +182,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Captured Variables", "Captu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapturedVariables", "LinqSQL\Basics\CapturedVariables\CapturedVariables.csproj", "{80D3CEB3-257F-4B15-ACC8-38ABECC37CEC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "How Deferred Execution Works", "How Deferred Execution Works", "{7AC10FDC-9E61-4E04-83D3-864E3312F6E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowDeferredExecutionWorks", "LinqSQL\Basics\HowDeferredExecutionWorks\HowDeferredExecutionWorks.csproj", "{655174C8-F2FC-4222-9C43-87BC72D8B283}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -364,6 +368,10 @@ Global
 		{80D3CEB3-257F-4B15-ACC8-38ABECC37CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80D3CEB3-257F-4B15-ACC8-38ABECC37CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80D3CEB3-257F-4B15-ACC8-38ABECC37CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655174C8-F2FC-4222-9C43-87BC72D8B283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655174C8-F2FC-4222-9C43-87BC72D8B283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655174C8-F2FC-4222-9C43-87BC72D8B283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655174C8-F2FC-4222-9C43-87BC72D8B283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -453,5 +461,7 @@ Global
 		{040C815C-CC5D-45F2-B3A5-E38246E51BCD} = {03220DAF-EA09-4E8A-8DAF-154212020C74}
 		{F882FB83-2F79-4425-97A7-49D0CD21A1F8} = {13B34CB7-D6F0-46E9-846A-5D3C0E7C3CD4}
 		{80D3CEB3-257F-4B15-ACC8-38ABECC37CEC} = {F882FB83-2F79-4425-97A7-49D0CD21A1F8}
+		{7AC10FDC-9E61-4E04-83D3-864E3312F6E7} = {13B34CB7-D6F0-46E9-846A-5D3C0E7C3CD4}
+		{655174C8-F2FC-4222-9C43-87BC72D8B283} = {7AC10FDC-9E61-4E04-83D3-864E3312F6E7}
 	EndGlobalSection
 EndGlobal
