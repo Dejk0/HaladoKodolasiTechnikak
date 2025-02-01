@@ -11,17 +11,7 @@ namespace AsEnumerable
         static void Main(string[] args)
         {
 
-            Regex wordCounter = new Regex(@"\b(\w|[-'])+\b");
             using var dbContext = new NutshellContext();
-
-            IEnumerable<MedicalArticle> efQuery = dbContext.MedicalArticles
-            .Where(article => article.Topic == "influenza");
-
-            var query = dbContext.MedicalArticles
-             .Where(article => article.Topic == "influenza" &&
-             wordCounter.Matches(article.Abstract).Count < 100);
-
-            foreach (string element in q) Console.WriteLine(element);
 
 
 
