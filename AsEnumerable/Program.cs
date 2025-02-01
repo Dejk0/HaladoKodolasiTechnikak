@@ -1,22 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
-using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
-
-namespace Interpreted_Queries
+namespace AsEnumerable
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             using var dbContext = new NutshellContext();
-            IQueryable<string> query = from c in dbContext.Customers
-                                       where c.Name.Contains("a")
-                                       orderby c.Name.Length
-                                       select c.Name.ToUpper();
-            foreach (string name in query) Console.WriteLine(name);
-        }
+            IEnumerable<string> q = dbContext.Customers
+             .Select(c => c.Name.ToUpper())
+             .OrderBy(n => n)
+             .Pair() // Local from this point on.
+             .Select((n, i) => "Pair " + i.ToString() + " = " + n);
 
+            foreach (string element in q) Console.WriteLine(element);
+
+
+
+        }
         public class Customer
         {
             public int ID { get; set; }
@@ -31,7 +33,22 @@ namespace Interpreted_Queries
             => modelBuilder.Entity<Customer>().ToTable("Customer")
             .HasKey(c => c.ID);
         }
+    }
 
+    public static class Extensions
+    {
+        public static IEnumerable<string> Pair(this IEnumerable<string> source)
+        {
+            string firstHalf = null;
+            foreach (string element in source)
+                if (firstHalf == null)
+                    firstHalf = element;
+                else
+                {
+                    yield return firstHalf + ", " + element;
+                    firstHalf = null;
+                }
+        }
 
     }
 }

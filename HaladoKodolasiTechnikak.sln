@@ -230,6 +230,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpreted Queries", "Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpreted Queries", "LinqSQL\Basics\Interpreted Queries\Interpreted Queries\Interpreted Queries.csproj", "{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combining Interpreted and Local Queries", "Combining Interpreted and Local Queries", "{AF1E6FAF-5E93-4EE9-BC67-C136E51BF312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombiningInterpretedandLocalQueries", "LinqSQL\Basics\Interpreted Queries\Combining Interpreted and Local Queries\CombiningInterpretedandLocalQueries\CombiningInterpretedandLocalQueries.csproj", "{C37E8187-C021-4C87-A3B6-4459FB0C7326}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsEnumerable", "AsEnumerable", "{5F84C5FF-33FD-4AB8-9617-364002579448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsEnumerable", "LinqSQL\Basics\Interpreted Queries\AsEnumerable\AsEnumerable.csproj", "{80B40910-4863-4507-BB20-85365C0D0031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -456,6 +464,14 @@ Global
 		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37E8187-C021-4C87-A3B6-4459FB0C7326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37E8187-C021-4C87-A3B6-4459FB0C7326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37E8187-C021-4C87-A3B6-4459FB0C7326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37E8187-C021-4C87-A3B6-4459FB0C7326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B40910-4863-4507-BB20-85365C0D0031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B40910-4863-4507-BB20-85365C0D0031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B40910-4863-4507-BB20-85365C0D0031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B40910-4863-4507-BB20-85365C0D0031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -569,5 +585,9 @@ Global
 		{5105A4B0-9B98-4FCA-9431-077B27935B16} = {9B0AAC51-EF7E-47CC-AF18-4035F5B32FA2}
 		{8027BBAA-CA9B-4772-AC6D-7B542373EE84} = {13B34CB7-D6F0-46E9-846A-5D3C0E7C3CD4}
 		{BB1FB11B-8DA1-49C8-9C64-71F770B10D0C} = {8027BBAA-CA9B-4772-AC6D-7B542373EE84}
+		{AF1E6FAF-5E93-4EE9-BC67-C136E51BF312} = {8027BBAA-CA9B-4772-AC6D-7B542373EE84}
+		{C37E8187-C021-4C87-A3B6-4459FB0C7326} = {AF1E6FAF-5E93-4EE9-BC67-C136E51BF312}
+		{5F84C5FF-33FD-4AB8-9617-364002579448} = {8027BBAA-CA9B-4772-AC6D-7B542373EE84}
+		{80B40910-4863-4507-BB20-85365C0D0031} = {5F84C5FF-33FD-4AB8-9617-364002579448}
 	EndGlobalSection
 EndGlobal

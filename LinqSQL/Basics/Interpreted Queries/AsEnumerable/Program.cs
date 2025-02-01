@@ -1,22 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
-using System.Xml.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
-namespace Interpreted_Queries
+namespace AsEnumerable
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            using var dbContext = new NutshellContext();
-            IQueryable<string> query = from c in dbContext.Customers
-                                       where c.Name.Contains("a")
-                                       orderby c.Name.Length
-                                       select c.Name.ToUpper();
-            foreach (string name in query) Console.WriteLine(name);
-        }
 
+            Regex wordCounter = new Regex(@"\b(\w|[-'])+\b");
+            using var dbContext = new NutshellContext();
+
+            IEnumerable<MedicalArticle> efQuery = dbContext.MedicalArticles
+            .Where(article => article.Topic == "influenza");
+
+            var query = dbContext.MedicalArticles
+             .Where(article => article.Topic == "influenza" &&
+             wordCounter.Matches(article.Abstract).Count < 100);
+
+            foreach (string element in q) Console.WriteLine(element);
+
+
+
+        }
         public class Customer
         {
             public int ID { get; set; }
@@ -31,7 +40,15 @@ namespace Interpreted_Queries
             => modelBuilder.Entity<Customer>().ToTable("Customer")
             .HasKey(c => c.ID);
         }
+    }
 
+    public static class Extensions
+    {
+        public static IEnumerable<TSource> AsEnumerable<TSource>
+            (this IEnumerable<TSource> source)
+        {
+            return source;
+        }
 
     }
 }
