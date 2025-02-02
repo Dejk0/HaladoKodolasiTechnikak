@@ -1,0 +1,13 @@
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package Microsoft.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.sqlite
+Install-Package Microsoft.EntityFrameworkCore.Tools
+
+Creating migration and snapshot
+
+Add-Migration InitialCreate
+Update-Database
+
+set the db file to always copy
+
