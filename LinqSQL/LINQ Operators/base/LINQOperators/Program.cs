@@ -22,9 +22,9 @@ namespace LINQOperators
             Join.Join.Instance.Joining(names, ages);
             Console.WriteLine("----------------");
             Ordering.Order.Instance.Ordering(names, ages);
-
-
         }
+            
+
 
         public class NutshellContext : DbContext
         {

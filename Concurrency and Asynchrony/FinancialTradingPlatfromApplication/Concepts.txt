@@ -1,0 +1,10 @@
+﻿Thread:
+	A thread is the smallest unit of execution that can be scheduled by 
+	an operating system. A thread is also known as a lightweight process. 
+	The idea is to achieve parallelism by dividing a process into multiple
+	threads. For example, in a browser, multiple tabs can be different threads.
+
+Thread Pool:
+	A thread pool is a group of pre-instantiated, idle threads which stand 
+	ready to be given work. These are preferred over instantiating new 
+	threads for each task when there is a large number of short tasks to be done.
