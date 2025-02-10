@@ -6,7 +6,7 @@ namespace StockMarketDataAnalysisWepApi_SAAS.Controllers
     [ApiController]
     public class StockMarketDataAnalisyController : ControllerBase
     {
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> Get()
         {
             StockMarketDataAnalyst stockMarketDataAnalyst = new StockMarketDataAnalyst("Stockmarket Data");
@@ -17,7 +17,10 @@ namespace StockMarketDataAnalysisWepApi_SAAS.Controllers
             string data4 = stockMarketDataAnalyst.CalculateBollingerbands();
 
             return Content($"{data1}, {data2}, {data3}, {data4}");
-        }
+            /*
+             * GetOpeningPrices - ThreadId: 9, CalculateSlowMovingAverage - ThreadId: 9, CalculateStockastics - ThreadId: 32, CalculateBollingerbands - ThreadId: 32
+             */
+           }
         public class StockMarketDataAnalyst
         {
             public StockMarketDataAnalyst(string data)

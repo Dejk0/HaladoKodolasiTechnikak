@@ -8,6 +8,7 @@ namespace StockMarketDataAnalysisWepApi_SAAS
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddControllers();
 
             var app = builder.Build();
 
@@ -22,13 +23,12 @@ namespace StockMarketDataAnalysisWepApi_SAAS
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
             app.UseAuthorization();
-
+            
             app.MapStaticAssets();
             app.MapRazorPages()
                .WithStaticAssets();
-
+            app.MapControllers();
             app.Run();
         }
     }
