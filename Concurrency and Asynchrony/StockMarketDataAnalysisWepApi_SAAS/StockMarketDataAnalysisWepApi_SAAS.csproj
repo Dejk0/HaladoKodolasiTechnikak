@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Concurrency and Asynchrony\StockMarketComponent\StockMarketComponent\StockMarketComponent.csproj" />
+    <ProjectReference Include="..\StockMarketComponent\StockMarketComponent\StockMarketComponent.csproj" />
   </ItemGroup>
 
 </Project>
