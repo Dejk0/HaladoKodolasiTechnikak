@@ -287,6 +287,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarketDataAnalysisWepA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Intermadiate", "Basics\Class Intermadiate\Class Intermadiate.csproj", "{A6AB3883-84C8-4A00-865B-8CA8F78E8E40}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlockingCollection Example", "BlockingCollection Example", "{458DC9E5-1C29-418A-BB41-28703C79901F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockingCollectionExample", "Concurrency and Asynchrony\BlockingCollectionExample\BlockingCollectionExample.csproj", "{978FD9C6-A861-4B21-B52D-51379AFA5324}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -569,6 +573,10 @@ Global
 		{A6AB3883-84C8-4A00-865B-8CA8F78E8E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6AB3883-84C8-4A00-865B-8CA8F78E8E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6AB3883-84C8-4A00-865B-8CA8F78E8E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978FD9C6-A861-4B21-B52D-51379AFA5324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978FD9C6-A861-4B21-B52D-51379AFA5324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978FD9C6-A861-4B21-B52D-51379AFA5324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978FD9C6-A861-4B21-B52D-51379AFA5324}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -708,5 +716,7 @@ Global
 		{2F73259D-1FB8-4B6A-9550-BEFF8301589A} = {A60606AF-30E6-4F95-B99D-1BBD2495811E}
 		{D1C2A5B7-B2F2-42E0-86EE-5C03E94E6DB5} = {49E4A5EF-095E-4646-91F1-BE75475CF8F2}
 		{A6AB3883-84C8-4A00-865B-8CA8F78E8E40} = {97E9EA5F-B013-4EE9-872C-2FA607D25BCC}
+		{458DC9E5-1C29-418A-BB41-28703C79901F} = {A60606AF-30E6-4F95-B99D-1BBD2495811E}
+		{978FD9C6-A861-4B21-B52D-51379AFA5324} = {458DC9E5-1C29-418A-BB41-28703C79901F}
 	EndGlobalSection
 EndGlobal
